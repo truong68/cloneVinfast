@@ -13,6 +13,10 @@
   --hieght-header: 80px;
 }
 
+.mt {
+  margin-top: 30px;
+}
+
 .container {
   width: 100%;
 }
@@ -22,6 +26,11 @@
   height: 80px;
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #fff;
 }
 
 .headerLeft {
@@ -56,6 +65,7 @@
   padding: 0;
   display: flex;
 }
+
 .menu li {
   padding: 30px 15px;
 }
@@ -96,13 +106,14 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
   background: #007bff;
-  color: #fff;;
+  color: #fff;
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
   text-transform: uppercase;
 }
-.rightbutton:hover{
+
+.rightbutton:hover {
   background: #fff;
   color: #007bff;
 }
@@ -111,14 +122,16 @@ a:hover {
   width: 10%;
   height: var(--hieght-header);
 }
+
 .navbar img {
   margin-top: 25px;
 }
+
 #navbar {
   display: none;
 }
 
-#toggleButton{
+#toggleButton {
   display: inline-block;
   padding: 15px 24px;
   font-size: 12px;
@@ -127,53 +140,160 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
   background: #fff;
-  color: #fff;;
+  color: #fff;
+  ;
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
   text-transform: uppercase;
 }
 
+.content {
+  width: 100%;
+  height: auto;
+}
+
+/* silder */
+.mySlides {
+  width: 100%;
+  height: 800px;
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+
 @media only screen and (max-width: 600px) {
-  .menu{
+  .menu {
     display: none;
   }
+
   .menumobile {
     flex-direction: column;
-    text-align:left;
+    text-align: left;
     display: none;
     width: 100%;
     position: absolute;
     top: 80px;
     left: 0%;
-    background-color:#fff;
+    background-color: #fff;
   }
+
   ul {
     flex-direction: column;
   }
 
   .menumobile li {
-    margin: 25px 10px !important;
+    margin: 25px 55px;
+    list-style: none;
+
   }
+
   /* .account{
     opacity: 0;
   } */
-  .headerRight{
+  .headerRight {
     width: 10%;
-  height: var(--hieght-header);
-    background: gold;
   }
-  .buttonUser{
+
+  .headerLeft {
+    width: 10%;
+  }
+
+  .buttonUser {
     display: none;
   }
-  .headerCenter{
+
+  .headerCenter {
     width: 0;
   }
+
   #navbar.show {
     display: block;
   }
-  #toggleButton{
-    background: green;
-  }
-  
+
 }
