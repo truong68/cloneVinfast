@@ -11,7 +11,7 @@
 
 <body>
   <div class="contaier">
-    <div class="header" >
+    <div class="header">
       <div class="headerLeft">
         <div class="logo">
           <img src="./images/logo.svg" alt="">
@@ -52,7 +52,6 @@
           <img src="./images/banner-vf-7.webp" style="width:100%">
           <div class="text">vinfast chính thức ra mắt vf 7</div>
         </div>
-
         <div class="mySlides fade">
           <img src="./images/banner-vf-6.webp" style="width:100%">
           <div class="text">vinfast chính thức ra mắt mẫu suv điện vf 6 dành cho gia đình việt</div>
@@ -70,16 +69,45 @@
           <img src="./images/banner-vf-e34.webp" style="width:100%">
           <div class="text">vinfast cập nhật phần mềm frs 8.7.9.2 cho ô tô điện vf 8</div>
         </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
       </div>
-      <br>
+      <div class="secttionOne mt">
+        <div class="buttonchoie mb">
+          <button class="choie" onclick="changeImage(1)">VF5</button>
+          <button class="choie" onclick="changeImage(2)">VF6</button>
+          <button class="choie" onclick="changeImage(3)">VFe34</button>
+          <button class="choie" onclick="changeImage(4)">VF8</button>
+          <button class="choie" onclick="changeImage(5)">VF9</button>
+          <img id="myImage" src="./images/vf-5.webp" alt="Image 1">
+        </div>
+        <div class="information mt">
+          <div class="infor">
+            <div class="titleText">Dòng xe
+              <p id="#displayText"></p>
+            </div>
+            <div class="titleText">Số chỗ ngồi
+              <p id="#displayText"></p>
 
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <div class="titleText">Quảng đường
+              <p id="#displayText"></p>
+            </div>
+            <div class="titleText">Giá từ
+              <p id="#displayText"></p>
+
+            </div>
+          </div>
+
+        </div>
       </div>
+
+
 
     </div>
   </div>
@@ -87,3 +115,39 @@
 </body>
 
 </html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Text</title>
+</head>
+<body>
+
+<p id="displayText">xe 5 chỗ trên 600km giá từ 1000000</p>
+
+<button onclick="toggleText()">Toggle Text</button>
+
+<script>
+var currentTextIndex = 0;
+var texts = [
+  ["5 chỗ ", "Trên 300 km","458.00.000"],
+  ["5 chỗ ", "Trên 399 km","675.00.000"],
+  ["5 chỗ ", "~318.6 km","710.00.000"],
+  ["5 chỗ ", "~400 km","1.090.00.000"],
+  ["6-7 chỗ ", "~423 km","1.491.00.000"],
+];;
+
+function toggleText() {
+  var displayTextElement = document.getElementById("displayText");
+
+  if (displayTextElement) {
+    currentTextIndex = (currentTextIndex + 1) % texts.length;
+    displayTextElement.textContent = texts[currentTextIndex];
+  }
+}
+
+
+</script>
+</body>
+</html> -->

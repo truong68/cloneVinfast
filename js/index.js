@@ -37,10 +37,49 @@ function showSlides() {
 }
 
 /* scrow header*/
-$(window).scroll(function(){
+(window).scroll(function(){
   var mainHeaders = $('.mainHeaders'),
       scroll = $(window).scrollTop();
 
   if (scroll >= 100) sticky.addClass('fixed');
   else mainHeaders.removeClass('fixed');
 });
+/*change image*/
+
+var images = ['./images/vf-5.webp', './images/vf-6.webp', './images/vf-e34.webp', './images/vf-8.webp', './images/vf-9.webp'];
+var nestedArray = [
+  ["5 chỗ ", "Trên 300 km","458.00.000"],
+  ["5 chỗ ", "Trên 399 km","675.00.000"],
+  ["5 chỗ ", "~318.6 km","710.00.000"],
+  ["5 chỗ ", "~400 km","1.090.00.000"],
+  ["6-7 chỗ ", "~423 km","1.491.00.000"],
+];
+
+function changeImage(index) {
+  var image = document.getElementById('myImage');
+  if (index >= 0 && index <= images.length) {
+    image.src = images[index - 1];
+    image.alt = 'Image ' + index;
+  }
+}
+/*change text*/
+var currentTextIndex = 0;
+var texts = [
+  ["5 chỗ ", "Trên 300 km","458.00.000"],
+  ["5 chỗ ", "Trên 399 km","675.00.000"],
+  ["5 chỗ ", "~318.6 km","710.00.000"],
+  ["5 chỗ ", "~400 km","1.090.00.000"],
+  ["6-7 chỗ ", "~423 km","1.491.00.000"],
+];;
+
+function toggleText() {
+  var displayTextElement = document.getElementById("displayText");
+
+  if (displayTextElement) {
+    currentTextIndex = (currentTextIndex + 1) % texts.length;
+    displayTextElement.textContent = texts[currentTextIndex];
+  }
+}
+
+
+
