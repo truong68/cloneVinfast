@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="./images/logowweb.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/index.css">
   <script src="./js/index.js" defer></script>
@@ -77,77 +78,132 @@
           <span class="dot" onclick="currentSlide(5)"></span>
         </div>
       </div>
+
       <div class="secttionOne mt">
+
         <div class="buttonchoie mb">
-          <button class="choie" onclick="changeImage(1)">VF5</button>
-          <button class="choie" onclick="changeImage(2)">VF6</button>
-          <button class="choie" onclick="changeImage(3)">VFe34</button>
-          <button class="choie" onclick="changeImage(4)">VF8</button>
-          <button class="choie" onclick="changeImage(5)">VF9</button>
-          <img id="myImage" src="./images/vf-5.webp" alt="Image 1">
+          <button class="choie" onclick="changeContent()">VF5</button>
+          <button class="choie" onclick="changeContent()">VF6</button>
+          <button class="choie" onclick="changeContent()">VFe34</button>
+          <button class="choie" onclick="changeContent()">VF8</button>
+          <button class="choie" onclick="changeContent()">VF9</button>
+          <img id="images" src="./images/vf5-2.png" alt="Image 1">
+          <hr>
+          <div class="infor mt">
+            <div class="contentBox">
+              <div class="box">Dòng xe: <br>
+                <p id="div1">xxxxxxx</p>
+              </div>
+              <div class="box">Số chỗ ngồi: <br>
+                <p id="div2">cccccccccc</p>
+              </div>
+              <div class="box">Quảng đường: <br>
+                <p id="div3">sssssss</p>
+              </div>
+              <div class="box">Giá từ: <br>
+                <p id="div4">aaaaaaaa</p>
+              </div>
+            </div>
+          </div>
+          <div class="information">
+            <div class="buttonByandSeedetails">
+              <div class="buttoninformation">
+                <button>đặt cọc </button>
+              </div>
+              <div class="buttoninformation">
+                <button>xem chi tiết </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="information mt">
-          <div class="infor">
-            <div class="titleText">Dòng xe
-              <p id="#displayText"></p>
+        <div class="buttonchoie mb mt">
+          <button class="choie" onclick="changeContent()">EVO200 LITE</button>
+          <button class="choie" onclick="changeContent()">EVO200</button>
+          <button class="choie" onclick="changeContent()">FELIZS</button>
+          <button class="choie" onclick="changeContent()">KLARAS</button>
+          <button class="choie" onclick="changeContent()">VENTOS</button>
+          <button class="choie" onclick="changeContent()">THEONS</button>
+          <img id="images" src="./images/Evo200-lite.webp" alt="Image 1">
+          <hr>
+          <div class="infor mt">
+            <div class="contentBox">
+              <div class="box">Dòng xe: <br>
+                <p id="div1">sssss</p>
+              </div>
+              <div class="box">Số chỗ ngồi: <br>
+                <p id="div2">ssssssssss</p>
+              </div>
+              <div class="box">Quảng đường: <br>
+                <p id="div3">ssssssssss</p>
+              </div>
+              <div class="box">Giá từ: <br>
+                <p id="div4">ssssssssssss</p>
+              </div>
             </div>
-            <div class="titleText">Số chỗ ngồi
-              <p id="#displayText"></p>
+          </div>
+          <div class="information">
+            <div class="buttonByandSeedetails">
+              <div class="buttoninformation">
+                <button>đặt cọc </button>
+              </div>
+              <div class="buttoninformation">
+                <button>xem chi tiết </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secttionTwo">
+        <div class="detail">
+          <div class="detailLeft">
+            <div class="rowOne">
+              <div class="images">
+                <img src="./images/tram.png" alt="">
+              </div>
+              <div class="titlelLef">
+                <h3>Pin & Trạm sạc ô tô </h3>
+                <p>Với phương châm luôn đặt lợi ích Khách hàng lên hàng đầu, VinFast áp dụng chính sách cho thuê pin độc
+                  đáo, ưu việt và khác biệt với tất cả các mô hình cho thuê pin từ trước tới nay trên thế giới.</p>
+                <span>xem chi tiết </span>
+              </div>
+            </div>
+            <div class="rowTwo">
+              <div class="images">
+                <img src="./images/pin.png" alt="">
+              </div>
+              <div class="titlelLef">
+                <h3>Pin & Trạm sạc ô tô </h3>
+                <p>Với phương châm luôn đặt lợi ích Khách hàng lên hàng đầu, VinFast áp dụng chính sách cho thuê pin độc
+                  đáo, ưu việt và khác biệt với tất cả các mô hình cho thuê pin từ trước tới nay trên thế giới.</p>
+                <span>xem chi tiết </span>
 
+              </div>
             </div>
-            <div class="titleText">Quảng đường
-              <p id="#displayText"></p>
-            </div>
-            <div class="titleText">Giá từ
-              <p id="#displayText"></p>
+          </div>
+          <div class="detailRight">
+            <!-- <div class="rowThree">
+              <div class="text">
+                <h3>Thiết bị sạc di động</h3>
+                <p>VinFast cung cấp đa dạng giải pháp sạc để đáp ứng nhu cầu sử dụng của khách hàng một cách thuận tiện
+                  nhất.</p>
+                <span>xem chi tiết </span>
+              </div>
 
+              <div class="imagesRight">
+                 <img src="./images/sac.png" alt=""> -->
+              </div>
             </div>
           </div>
 
         </div>
+
       </div>
-
-
-
     </div>
+
+
+
+  </div>
   </div>
 
 </body>
 
-</html>
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toggle Text</title>
-</head>
-<body>
-
-<p id="displayText">xe 5 chỗ trên 600km giá từ 1000000</p>
-
-<button onclick="toggleText()">Toggle Text</button>
-
-<script>
-var currentTextIndex = 0;
-var texts = [
-  ["5 chỗ ", "Trên 300 km","458.00.000"],
-  ["5 chỗ ", "Trên 399 km","675.00.000"],
-  ["5 chỗ ", "~318.6 km","710.00.000"],
-  ["5 chỗ ", "~400 km","1.090.00.000"],
-  ["6-7 chỗ ", "~423 km","1.491.00.000"],
-];;
-
-function toggleText() {
-  var displayTextElement = document.getElementById("displayText");
-
-  if (displayTextElement) {
-    currentTextIndex = (currentTextIndex + 1) % texts.length;
-    displayTextElement.textContent = texts[currentTextIndex];
-  }
-}
-
-
-</script>
-</body>
-</html> -->

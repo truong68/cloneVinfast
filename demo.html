@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Scanner</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/quagga@0.12.1/dist/quagga.min.js"></script>
+</head>
+<body>
+
+    <h1>Product Scanner</h1>
+
+    <div id="interactive" class="viewport"></div>
+    <input type="text" id="result" readonly>
+
+    <script>
+        Quagga.init({
+            inputStream: {
+                name: "Live",
+                type: "LiveStream",
+                target: document.querySelector('#interactive'),
+                constraints: {
+                    width: 480,
+                    height: 320,
+                    facingMode: "environment"
+                },
+            },
+            decoder: {
+                readers: ["ean_reader", "ean_8_reader"]
+            }
+        }, function (err) {
+            if (err) {
+                console.error(err);
+                return;
+            }
+            console.log("Initialization finished. Ready to start");
+            Quagga.start();
+        });
+
+        Quagga.onDetected(function (result) {
+            var code = result.codeResult.code;
+            document.getElementById('result').value = code;
+
+            // Nếu muốn dừng quét sau khi tìm thấy mã vạch, hãy sử dụng dòng sau
+            // Quagga.stop();
+        });
+    </script>
+
+</body>
+</html>
