@@ -6,13 +6,6 @@ toggleButton.addEventListener("click", () => {
   navbar.classList.toggle("show");
 });
 
-// JavaScript ES6
-// const myButton = document.getElementById('myButton');
-
-// myButton.addEventListener('click', () => {
-//   console.log('Button clicked!');
-//   // Thêm mã lệnh xử lý bạn muốn thực hiện khi nút được click ở đây
-// });
 let slideIndex = 0;
 showSlides();
 
@@ -60,11 +53,11 @@ var imageArray  = [
 ];
 var currentIndex = 0;
 function changeContent() {
-  for (var i = 1; i <= textArray.length; i++) {
+  for (var i = 1; i <= imageArray.length; i++) {
     var divId = "div" + i;
     // Update content in the div
-    document.getElementById(divId).innerHTML = textArray[currentIndex];
-    currentIndex = (currentIndex + 1) % textArray.length;
+    document.getElementById(divId).innerHTML = imageArray[currentIndex];
+    currentIndex = (currentIndex + 1) % imageArray.length;
   }
 }
 // var currentIndex = 0;

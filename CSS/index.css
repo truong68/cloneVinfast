@@ -38,7 +38,7 @@
 }
 
 .headerLeft {
-  width: 10%;
+  width: 7%;
   height: 80px;
 }
 
@@ -517,8 +517,6 @@ h4 {
 .secttionThree {
   width: 100%;
   height: 700px;
-  display: flex;
-  justify-content: center;
   background: #D6DCE1;
   margin-top: 80px;
 }
@@ -648,8 +646,8 @@ h4 {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background: #fff;
-  color: #007bff;
+  background: #007bff;
+  color: #fff;
   /* border-width: 1px #007bff; */
   transition: background-color 0.8s ease;
   text-transform: uppercase;
@@ -657,8 +655,8 @@ h4 {
 }
 
 .buttonFour:hover {
-  background: #007bff;
-  color: #fff;
+  background: #fff;
+  color: #007bff;
 
 }
 
@@ -688,7 +686,7 @@ h4 {
 
 .fiveImage {
   width: 100%;
-  height: 350px;
+  height: 400px;
 
 }
 
@@ -807,10 +805,16 @@ h4 {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {}
+@media only screen and (max-width: 300px) {
+
+}
 
 
 @media only screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+  }
+
   .menu {
     display: none;
   }
@@ -837,15 +841,12 @@ h4 {
 
   }
 
-  /* .account{
-    opacity: 0;
-  } */
   .headerRight {
     width: 10%;
   }
 
   .headerLeft {
-    width: 10%;
+    width: 30%;
   }
 
   .buttonUser {
@@ -892,14 +893,10 @@ h4 {
     height: auto;
   }
 
-  /* .information {
-    margin-top: 60px;
-  } */
-
   .infor {
     width: 100%;
     height: 150px;
-    /* background: red; */
+
   }
 
   .information {
@@ -918,7 +915,100 @@ h4 {
     text-align: center;
   }
 
-  .buttonByandSeedetails {}
+  .detail {
+    width: 92%;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .detailLeft {
+    width: 100%;
+  }
+
+  .detailRight {
+    width: 100%;
+    height: 600px;
+  }
+  
+  .secttionThree{
+    height: 600px;
+  }
+
+  .warrantyService {
+    flex-direction: column;
+    justify-content: center;
+    height: 570px;
+  }
+
+  .warrantyServiceText {
+    width: 100%;
+    justify-content: center;
+  }
+  .textContent {
+    width: 92%;
+  }
+
+  .warrantyServiceImage {
+    width: 100%;
+    height: 300px;
+  }
+  .secttionFour{
+    flex-direction:column-reverse;
+  }
+  .rowFour{
+    width: 92%;
+  }
+  .textFour {
+    top:50%;
+    left: 10%;
+    text-align: center;
+    align-items: center;
+  }
+  .mobile{
+    left: 15%;
+    bottom: 100%;
+  }
+  .buttonFour{
+    padding: 12px 100px;
+  }
+  .sectionContent{
+    width: 92%; 
+    height: 560px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .secttionFive{
+    height: 560px;
+    margin-bottom:40px;
+
+  }
+  .sectionFiveBox {
+    width: 100%;
+  }
+  .fiveImage{
+    height:auto;
+  }
+  .secttionSix img{
+    height: 80%;
+  }
+  .footer{
+    flex-direction: column;
+    height: 600px;
+  }
+  .footerboxOne{
+    width: 100%;
+  }
+  .footerboxTwo{
+    width: 100%;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .boxtwoLeft a{
+    padding:10px 20px;
+  }
+   .boxtwoRight a{
+    padding:10px 20px;
+  }
 
   .titleText p {
     font-size: 11px;
@@ -927,6 +1017,236 @@ h4 {
   .mb {
     margin-bottom: 0px;
   }
+  /* css tablet */
+ 
 
 
+}
+/* Styles for tablets */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+  .header {
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menumobile {
+    flex-direction: column;
+    text-align: left;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 80px;
+    left: 0%;
+    background-color: #fff;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  .menumobile li {
+    margin: 25px 55px;
+    list-style: none;
+
+  }
+
+  .headerRight {
+    width: 10%;
+  }
+
+  .headerLeft {
+    width: 30%;
+  }
+
+  .buttonUser {
+    display: none;
+  }
+
+  .headerCenter {
+    width: 35%;
+}
+
+  #navbar.show {
+    display: block;
+  }
+
+  .slideshow-container {
+    height: 390px;
+  }
+
+  .mySlides {
+    height: 360px;
+  }
+
+  .dot {
+    width: 9px;
+    height: 9px;
+    margin: 0;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+
+  .mt {
+    margin-top: 0;
+  }
+
+  .choie {
+    padding: 14px 5px;
+    font-size: 14px;
+  }
+
+  .buttonchoie {
+    width: 100%;
+    height: auto;
+  }
+
+  .infor {
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+
+  }
+
+  .information {
+    height: 70px;
+  }
+
+  .contentBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 600px;
+  }
+
+  .box {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .detail {
+    width: 92%;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .detailLeft {
+    width: 100%;
+  }
+
+  .detailRight {
+    width: 100%;
+    height: 520px;
+  }
+  .titltext{
+    height: 120px;
+  }
+  .titltext p{
+    font-size: 12pt;
+  }
+  .imagesRight img{
+  object-fit:contain;
+  }
+  .secttionThree{
+    height: 600px;
+    margin-top: 50px;
+  }
+
+  .warrantyService {
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+  }
+  .buttonwarrantyService{
+    width: 70%;
+  }
+  .tabletButton{
+    padding: 12px 130px;
+  }
+
+  .warrantyServiceText {
+    width: 100%;
+    justify-content: center;
+  }
+  .warrantyServiceText p{
+    font-size: 12pt;
+  }
+  .textContent {
+    width: 92%;
+  }
+
+  .warrantyServiceImage {
+    width: 100%;
+    height: 300px;
+  }
+  .secttionFour{
+    flex-direction:column-reverse;
+  }
+  .rowFour{
+    width: 92%;
+  }
+  .textFour {
+    width: 92%;
+    top:68%;
+    left: 4%;
+    text-align: center;
+    align-items: center;
+  }
+  .textFour p {
+    font-size: 12pt;
+  }
+  .mobile{
+    left: 33%;
+    bottom: 100%;
+  }
+  .buttonFour{
+    padding: 14px 256px;
+
+  }
+  .sectionContent{
+    width: 92%; 
+    height: 900px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .secttionFive{
+    height: 800px;
+    margin-bottom:40px;
+
+  }
+  .sectionFiveBox {
+    width: 100%;
+  }
+  .fiveImage{
+    height:400px;
+  }
+  .secttionSix img{
+    height: 80%;
+  }
+  .footer{
+    flex-direction: column;
+    height: 550px;
+  }
+  .footerboxOne{
+    width: 100%;
+  }
+  .footerText{
+    height: 250px;
+  }
+  .footerboxTwo{
+    width: 100%;
+    flex-direction: column;
+  }
+  .boxtwoLeft a{
+    padding:10px 20px;
+  }
+   .boxtwoRight a{
+    padding:10px 20px;
+  }
 }
