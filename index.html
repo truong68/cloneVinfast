@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/x-icon" href="./images/logowweb.png">
+  <link rel="icon" type="image/x-icon" href="./images/logo.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/index.css">
   <script src="./js/index.js" defer></script>
-  <title>Clone Vinfast</title>
+  <title>Vinfast</title>
 </head>
 
 <body>
@@ -79,26 +79,26 @@
       </div>
       <div class="secttionOne mt">
         <div class="buttonchoie mb">
-          <button class="choie" onclick="changeContent()">VF5</button>
-          <button class="choie" onclick="changeContent()">VF6</button>
-          <button class="choie" onclick="changeContent()">VFe34</button>
-          <button class="choie" onclick="changeContent()">VF8</button>
-          <button class="choie" onclick="changeContent()">VF9</button>
-          <img id="div" src="./images/vf5-2.png" alt="Image 1">
+          <button class="choie" onclick="changeContentCar(1)">VF5</button>
+          <button class="choie" onclick="changeContentCar(2)">VF6</button>
+          <button class="choie" onclick="changeContentCar(3)">VFe34</button>
+          <button class="choie" onclick="changeContentCar(4)">VF8</button>
+          <button class="choie" onclick="changeContentCar(5)">VF9</button>
+          <img src="images/vf-8.webp" id="imageContent">
           <hr>
           <div class="infor mt">
             <div class="contentBox">
-              <div class="box">Dòng xe: <br>
-                <p id="div1">xxxxxxx</p>
+              <div class="box" id="displayAreaCar">Dòng xe: <br>
+                <p id="text1">SUV</p>
               </div>
-              <div class="box">Số chỗ ngồi: <br>
-                <p id="div2">cccccccccc</p>
+              <div class="box" id="displayAreaCar">Số chỗ ngồi: <br>
+                <p id="text2">5 chỗ </p>
               </div>
-              <div class="box">Quảng đường: <br>
-                <p id="div3">sssssss</p>
+              <div class="box" id="displayAreaCar">Quảng đường: <br>
+                <p id="text3">Trên 300 km </p>
               </div>
-              <div class="box">Giá từ: <br>
-                <p id="div4">aaaaaaaa</p>
+              <div class="box" id="displayAreaCar">Giá từ: <br>
+                <p id="text4">468.000.000 VNĐ</p>
               </div>
             </div>
           </div>
@@ -114,27 +114,27 @@
           </div>
         </div>
         <div class="buttonchoie mb mt">
-          <button class="choie" onclick="changeContent()">EVO200 LITE</button>
-          <button class="choie" onclick="changeContent()">EVO200</button>
-          <button class="choie" onclick="changeContent()">FELIZS</button>
-          <button class="choie" onclick="changeContent()">KLARAS</button>
-          <button class="choie" onclick="changeContent()">VENTOS</button>
-          <button class="choie" onclick="changeContent()">THEONS</button>
-          <img id="images" src="./images/Evo200-lite.webp" alt="Image 1">
+          <button class="choie" onclick="changeContentBike(1)">EVO200 LITE</button>
+          <button class="choie" onclick="changeContentBike()">EVO200</button>
+          <button class="choie" onclick="changeContentBike()">FELIZS</button>
+          <button class="choie" onclick="changeContentBike()">KLARAS</button>
+          <button class="choie" onclick="changeContentBike()">VENTOS</button>
+          <button class="choie" onclick="changeContentBike()">THEONS</button>
+          <img src="./images/Evo200-lite.webp"  id="imageFirts">
           <hr>
           <div class="infor mt">
-            <div class="contentBox">
-              <div class="box">Dòng xe: <br>
-                <p id="div1">sssss</p>
+            <div class="contentBox" >
+              <div class="box" id="displayAreaBike">Tốc độ tối đa: <br>
+                <p id="title1">49 km/h</p>
               </div>
-              <div class="box">Số chỗ ngồi: <br>
-                <p id="div2">ssssssssss</p>
+              <div class="box"  id="displayAreaBike">Quãng đường 1 lần sạc : <br>
+                <p id="title2">205 km</p>
               </div>
-              <div class="box">Quảng đường: <br>
-                <p id="div3">ssssssssss</p>
+              <div class="box"  id="displayAreaBike">Cốp xe : <br>
+                <p id="title3">22 lít</p>
               </div>
-              <div class="box">Giá từ: <br>
-                <p id="div4">ssssssssssss</p>
+              <div class="box"  id="displayAreaBike">Giá từ: <br>
+                <p id="title4">18.000.000 VNĐ</p>
               </div>
             </div>
           </div>
